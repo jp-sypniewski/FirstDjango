@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # third party
 
     # my stuffs
+    'pages',
     'products',
 ]
 

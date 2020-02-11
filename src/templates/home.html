@@ -1,2 +1,8 @@
-<h1>Home Template</h1>
-<p>Some Text</p>
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>Home Template</h1>
+	{{ request.user }}
+	<p>Some Text</p> 
+
+{% endblock %}

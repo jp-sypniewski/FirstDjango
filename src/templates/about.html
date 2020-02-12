@@ -14,10 +14,14 @@
 		<li>Item2</li>
 	</ul>
 
+	{{ my_html|safe}}
+
 	<ul>
 	{% for my_sub_item in my_list %}
 		{% if my_sub_item == 123 %}
-			<li>{{ forloop.counter}} - {{ my_sub_item|add:123}}</li>
+			<li>{{ forloop.counter}} - {{ my_sub_item|add:123}}</li> <!--pipe is used to add a filter, filters can stack  -->
+
+		{% elif my_sub_item == 123356 %}
 
 
 		{% else %}
